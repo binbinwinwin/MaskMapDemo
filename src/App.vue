@@ -257,9 +257,9 @@ export default {
       zoom: 14,
     });
 
-    L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
+    L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
       maxZoom: 16,
-      attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy;<a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
+      attribution: '&copy; OpenStreetMap France | &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     }).addTo(osmMap);
 
     this.$http.get('https://raw.githubusercontent.com/kiang/pharmacies/master/json/points.json')
